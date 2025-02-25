@@ -72,17 +72,61 @@ const Page1 = () => {
           from the students- <br /> -Participant of one event must not
           participate in another- <br /> -College ID and permission letter from
           Principal / HOD for each team is mandatory-
-          <br /> -The judge’s decision will be final, and event coordinators
+          <br /> -The judge's decision will be final, and event coordinators
           reserves the right to take action in case of any misconduct-
         </p>
         <button
           onClick={handleEventRulesClick}
-          className="mt-10 px-4 py-2 bg-blue-400 text-white rounded font-primary hover:bg-blue-600 hover:cursor-pointer"
+          className="my-4 px-4 py-2 bg-blue-400 text-white rounded font-primary hover:bg-blue-600 hover:cursor-pointer"
         >
           Event Rules
         </button>
       </div>
       {/* Contacts */}
+      <div className="lg:h-screen lg:w-screen mt-15 font-primary flex flex-col justify-center items-center">
+        <h1 className="text-blue-400 font-primary font-bold text-2xl lg:text-4xl md:text-3xl">
+          Organizing Committee
+        </h1>
+        <h1 className="mb-10 text-white font-primary">Student Coordinators</h1>
+        <div className="block w-full text-sm md:text-base flex flex-col lg:flex-row items-center justify-center lg:justify-around lg:items-around">
+          <div className="mb-5 block text-white font-primary">
+            <h1>
+              <span className="text-blue-400 font-bold">
+                Student Coordinator:
+              </span>{" "}
+              Shishir Shetty
+            </h1>
+            <h1>
+              <span className="text-blue-400 font-bold">Contact No:</span>{" "}
+              <span className="select-text">8108452426</span>
+            </h1>
+          </div>
+          <div className="mb-5 block text-white font-primary">
+            <h1>
+              <span className="text-blue-400 font-bold">
+                Student Coordinator:
+              </span>{" "}
+              Samiksha Shetty
+            </h1>
+            <h1>
+              <span className="text-blue-400 font-bold">Contact No:</span>{" "}
+              <span className="select-text">8010156146</span>
+            </h1>
+          </div>
+          <div className="mb-10 block text-white font-primary">
+            <h1>
+              <span className="text-blue-400 font-bold">
+                Student Coordinator:
+              </span>{" "}
+              Shreyash Devadiga
+            </h1>
+            <h1>
+              <span className="text-blue-400 font-bold">Contact No:</span>{" "}
+              <span className="select-text">7760891473</span>
+            </h1>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
