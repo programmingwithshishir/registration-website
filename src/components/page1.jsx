@@ -88,7 +88,7 @@ const Page1 = () => {
           Organizing Committee
         </h1>
         <h1 className="mb-10 text-white font-primary">Student Coordinators</h1>
-        <div className="block w-full text-sm md:text-base flex flex-col lg:flex-row items-center justify-center lg:justify-around lg:items-around">
+        <div className="w-full text-sm md:text-base flex flex-col lg:flex-row items-center justify-center lg:justify-around lg:items-around">
           <div className="mb-5 block text-white font-primary">
             <h1>
               <span className="text-blue-400 font-bold">
