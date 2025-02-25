@@ -58,7 +58,7 @@ const Page1 = () => {
       {/* Rules and Regulations */}
       <div className="lg:h-screen lg:w-screen mt-15 font-primary flex flex-col justify-center items-center">
         <h1 className="mb-4 lg:mb-6 text-blue-400 font-primary font-bold text-2xl lg:text-4xl md:text-3xl">
-          - General Rules & Events -
+          General Rules & Events
         </h1>
         <p className="mx-5 md:max-w-[80vw] lg:max-w-[70vw] leading-4 lg:leading-6 font-primary text-sm md:text-base lg:text-xl text-white text-center">
           -The fest is open to all Engineering and Degree students-
@@ -88,7 +88,7 @@ const Page1 = () => {
           Organizing Committee
         </h1>
         <h1 className="mb-10 text-white font-primary">Student Coordinators</h1>
-        <div className="w-full text-sm md:text-base flex flex-col lg:flex-row items-center justify-center lg:justify-around lg:items-around">
+        <div className="w-full text-xs md:text-base flex flex-col lg:flex-row items-center justify-center lg:justify-around lg:items-around">
           <div className="mb-5 block text-white font-primary">
             <h1>
               <span className="text-blue-400 font-bold">
