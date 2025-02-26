@@ -7,6 +7,11 @@
   --font-primary: "Cinzel", serif;
 }
 
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 html {
   overflow: scroll;
   overflow-x: hidden;
