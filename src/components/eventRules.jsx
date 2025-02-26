@@ -1,6 +1,6 @@
 const EventRules = () => {
   return (
-    <div className="font-primary flex flex-col justify-center items-center">
+    <div className="font-primary flex flex-col justify-center items-center select-none">
       <h1 className="mt-8 mb-4 lg:mb-6 text-white font-primary font-bold text-2xl lg:text-4xl md:text-3xl">
         -Event Rules-
       </h1>
@@ -16,9 +16,10 @@ const EventRules = () => {
         </p>
         <h1 className="text-white">
           Event Coordinators: <br />{" "}
-          <span className="text-blue-400 font-bold">Varshitha:</span> 8867041668{" "}
-          <br /> <span className="text-blue-400 font-bold">Sahana:</span>{" "}
-          8197235527
+          <span className="text-blue-400 font-bold">Varshitha:</span>{" "}
+          <span className="select-text">8867041668</span> <br />{" "}
+          <span className="text-blue-400 font-bold">Sahana:</span>{" "}
+          <span className="select-text">8197235527</span>
         </h1>
       </div>
       {/* Pixel-Craft: Web Designing */}
@@ -33,9 +34,10 @@ const EventRules = () => {
         </p>
         <h1 className="text-white">
           Event Coordinators: <br />{" "}
-          <span className="text-blue-400 font-bold">Suman:</span> 6361208857{" "}
-          <br /> <span className="text-blue-400 font-bold">Puneeth:</span>{" "}
-          8088076080
+          <span className="text-blue-400 font-bold">Suman:</span>{" "}
+          <span className="select-text">6361208857</span> <br />{" "}
+          <span className="text-blue-400 font-bold">Puneeth:</span>{" "}
+          <span className="select-text">8088076080</span>
         </h1>
       </div>
       {/* Byte-Battle: Coding */}
@@ -50,9 +52,10 @@ const EventRules = () => {
         </p>
         <h1 className="text-white">
           Event Coordinators: <br />{" "}
-          <span className="text-blue-400 font-bold">Shishir:</span> 8108452426{" "}
-          <br /> <span className="text-blue-400 font-bold">Jessica:</span>{" "}
-          9741132992
+          <span className="text-blue-400 font-bold">Shishir:</span>{" "}
+          <span className="select-text">8108452426</span> <br />{" "}
+          <span className="text-blue-400 font-bold">Jessica:</span>{" "}
+          <span className="select-text">9741132992</span>
         </h1>
       </div>
       {/* Tech-Tix: IT Manager */}
@@ -67,9 +70,10 @@ const EventRules = () => {
         </p>
         <h1 className="text-white">
           Event Coordinators: <br />{" "}
-          <span className="text-blue-400 font-bold">Numa:</span> 7760453135{" "}
-          <br /> <span className="text-blue-400 font-bold">Rashmi:</span>{" "}
-          9483538319
+          <span className="text-blue-400 font-bold">Numa:</span>{" "}
+          <span className="select-text">7760453135</span> <br />{" "}
+          <span className="text-blue-400 font-bold">Rashmi:</span>{" "}
+          <span className="select-text">9483538319</span>
         </h1>
       </div>
       {/* Tech-Reveal: Product Launch */}
@@ -83,9 +87,10 @@ const EventRules = () => {
         </p>
         <h1 className="text-white">
           Event Coordinators: <br />{" "}
-          <span className="text-blue-400 font-bold">Pranamya:</span> 8618288097{" "}
-          <br /> <span className="text-blue-400 font-bold">Dwithi:</span>{" "}
-          8861852637
+          <span className="text-blue-400 font-bold">Pranamya:</span>{" "}
+          <span className="select-text">8618288097</span> <br />{" "}
+          <span className="text-blue-400 font-bold">Dwithi:</span>{" "}
+          <span className="select-text">8861852637</span>
         </h1>
       </div>
       {/* Cine-Scope: Videography */}
@@ -100,9 +105,10 @@ const EventRules = () => {
         </p>
         <h1 className="text-white">
           Event Coordinators: <br />{" "}
-          <span className="text-blue-400 font-bold">Shazil:</span> 9880123647{" "}
-          <br /> <span className="text-blue-400 font-bold">Sarfaraz:</span>{" "}
-          7795848680
+          <span className="text-blue-400 font-bold">Shazil:</span>{" "}
+          <span className="select-text">9880123647</span> <br />{" "}
+          <span className="text-blue-400 font-bold">Sarfaraz:</span>{" "}
+          <span className="select-text">7795848680</span>
         </h1>
       </div>
       {/* Rhythm: Cultural Dance */}
@@ -117,9 +123,10 @@ const EventRules = () => {
         </p>
         <h1 className="text-white">
           Event Coordinators: <br />{" "}
-          <span className="text-blue-400 font-bold">Samiksha:</span> 8010156146{" "}
-          <br /> <span className="text-blue-400 font-bold">Navya:</span>{" "}
-          8123700233
+          <span className="text-blue-400 font-bold">Samiksha:</span>{" "}
+          <span className="select-text">8010156146</span> <br />{" "}
+          <span className="text-blue-400 font-bold">Navya:</span>{" "}
+          <span className="select-text">8123700233</span>
         </h1>
       </div>
     </div>
