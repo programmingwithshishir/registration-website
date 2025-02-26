@@ -27,7 +27,7 @@ const Page1 = () => {
         </h1>
         <button
           onClick={handleRegisterClick}
-          className="mt-10 px-4 py-2 bg-blue-400 text-white rounded font-bold md:font-normal font-primary hover:bg-blue-600 hover:cursor-pointer"
+          className="mt-10 px-4 py-2 focus:outline-none bg-blue-400 text-white rounded font-bold md:font-normal font-primary hover:bg-blue-600 hover:cursor-pointer"
         >
           Register Now
         </button>
@@ -77,7 +77,7 @@ const Page1 = () => {
         </p>
         <button
           onClick={handleEventRulesClick}
-          className="my-4 px-4 py-2 bg-blue-400 text-white rounded font-bold md:font-normal font-primary hover:bg-blue-600 hover:cursor-pointer"
+          className="my-4 px-4 py-2 focus:outline-none bg-blue-400 text-white rounded font-bold md:font-normal font-primary hover:bg-blue-600 hover:cursor-pointer"
         >
           Event Rules
         </button>
