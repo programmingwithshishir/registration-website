@@ -5,6 +5,7 @@ import { collection, addDoc } from "firebase/firestore";
 const RegistrationPage = () => {
   const [selectedEvent, setSelectedEvent] = useState("");
   const [players, setPlayers] = useState([]);
+  const [isRegistering, setIsRegistering] = useState(false);
 
   const eventPlayerCount = {
     "it-quiz": 2,
@@ -82,18 +83,21 @@ const RegistrationPage = () => {
 
     const addDocumentWithTimeout = async (data, timeout = 30000) => {
       return Promise.race([
-        addDoc(collection(db, "users"), data),
+        addDoc(collection(db, "registered"), data),
         new Promise((_, reject) =>
           setTimeout(() => reject(new Error("Request timed out")), timeout)
         ),
       ]);
     };
+
+    // Posting the data
     try {
+      setIsRegistering(true);
       await addDocumentWithTimeout(
         {
-          teamName: teamName.value,
-          collegeName: collegeName.value,
-          transactionId: transactionId.value,
+          teamName: teamName.value.trim(),
+          collegeName: collegeName.value.trim(),
+          transactionId: transactionId.value.trim(),
           event: selectedEvent,
           createdAt: new Date(),
           players: players,
@@ -101,8 +105,14 @@ const RegistrationPage = () => {
         },
         30000
       );
+      alert("Registration successful!");
+      return;
     } catch (error) {
-      console.error("Error");
+      alert(
+        "Registration Failed!\nKindly check your internet connection!\nIf you keep getting the issue, kindly contact the coordinator!"
+      );
+    } finally {
+      setIsRegistering(false);
     }
   };
 
@@ -264,12 +274,23 @@ const RegistrationPage = () => {
           </h1>
         )}
         {/* Submit Button */}
-        <button
-          onClick={handleSubmit}
-          className="mt-6 w-3/4 bg-green-500 text-black font-semibold py-2 rounded-sm cursor-pointer"
-        >
-          Register
-        </button>
+        {isRegistering && (
+          <button
+            onClick={handleSubmit}
+            className="mt-6 w-3/4 bg-gray-600 text-white font-semibold py-2 rounded-sm cursor-pointer"
+            disabled
+          >
+            Registering...
+          </button>
+        )}
+        {!isRegistering && (
+          <button
+            onClick={handleSubmit}
+            className="mt-6 w-3/4 bg-green-500 text-black font-semibold py-2 rounded-sm cursor-pointer"
+          >
+            Register
+          </button>
+        )}
         <h1 className="mt-2 mb-6 text-white w-3/4 text-center text-xs md:text-sm">
           <span className="font-bold">Note:</span> Incase of any technical
           issues, Kindly contact <span className="font-bold">Shishir:</span>{" "}
