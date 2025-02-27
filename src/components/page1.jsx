@@ -55,6 +55,30 @@ const Page1 = () => {
           artists enable the students to develop the aesthetic sense.
         </p>
       </div>
+      {/* About the Fest */}
+      <div className="lg:h-screen lg:w-screen mt-15 flex flex-col items-center justify-center">
+        <h1 className="mb-4 lg:mb-6 text-blue-400 font-primary font-bold text-3xl lg:text-4xl md:text-4xl">
+          Techotsav 2025
+        </h1>
+        <p className="mx-5 md:max-w-[80vw] lg:max-w-[70vw] leading-4 lg:leading-6 font-primary text-sm md:text-base lg:text-xl text-white text-center">
+          Techotsav 2025 is an inter-college IT fest organized by the Department
+          of Computer Science, Alva's Degree College, Moodubidire. With a grand
+          prize pool of 30,000/- this fest brings together the brightest minds
+          from engineering and degree colleges to compete, innovate, and
+          showcase their technical prowess. <br />
+          <br /> Scheduled for 14th-15th March 2025 at Krishisiri Vedike, Alva's
+          Education Foundation, Moodubidire, Techotsav 2025 promises an exciting
+          platform for students to test their skills, creativity, and
+          problem-solving abilities. With prestigious sponsors and industry
+          collaborations, Techotsav 2025 is more than just a competition—it's an
+          opportunity to learn, network, and excel in the field of technology.{" "}
+          <br />
+          <br /> Join us as we shape the future—because <br />
+          <span className="text-blue-400 font-semibold">
+            The Future is Now!
+          </span>
+        </p>
+      </div>
       {/* Rules and Regulations */}
       <div className="lg:h-screen lg:w-screen mt-15 font-primary flex flex-col justify-center items-center">
         <h1 className="mb-4 lg:mb-6 text-blue-400 font-primary font-bold text-2xl lg:text-4xl md:text-3xl">
@@ -63,7 +87,7 @@ const Page1 = () => {
         <p className="mx-5 md:max-w-[80vw] lg:max-w-[70vw] leading-4 lg:leading-6 font-primary text-sm md:text-base lg:text-xl text-white text-center">
           -The fest is open to all Engineering and Degree students-
           <br />
-          -A team may consist a maximum of 18 participants- <br /> -Only those
+          -A team may consist a maximum of 20 participants- <br /> -Only those
           teams that participate in all events are eligible for overall
           championship- <br /> -Registration is restricted to only one team from
           Degree and one team from Engineering college of an Education
