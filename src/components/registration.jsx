@@ -108,7 +108,7 @@ const RegistrationPage = () => {
           <input
             id="teamName"
             name="teamName"
-            className="w-full rounded px-2 py-1 border border-blue-400 text-blue-400 md:text-lg focus:outline-none text-base font-semibold"
+            className="w-full text-blue-400 md:text-lg focus:outline-none text-base font-semibold"
             type="text"
             placeholder="Must not be same as college"
             required
@@ -126,7 +126,7 @@ const RegistrationPage = () => {
           <input
             id="collegeName"
             name="collegeName"
-            className="w-full rounded px-2 py-1 border border-blue-400 text-blue-400 md:text-lg focus:outline-none text-base font-semibold"
+            className="w-full text-blue-400 md:text-lg focus:outline-none text-base font-semibold"
             type="text"
             placeholder="Must not be same as Team name"
             required
@@ -137,11 +137,12 @@ const RegistrationPage = () => {
         <div className="my-3 w-5/6 flex flex-col md:flex-row items-start justify-center md:items-center md:justify-center">
           <label
             className="text-nowrap text-lg md:pr-3 text-white font-semibold"
-            htmlFor="eventname"
+            htmlFor="eventName"
           >
             Event:{" "}
           </label>
           <select
+            id="eventName"
             name="eventname"
             className="text-black text-sm font-semibold border-none rounded-sm w-full h-10 bg-blue-400 p-2"
             value={selectedEvent}
