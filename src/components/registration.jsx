@@ -224,6 +224,7 @@ const RegistrationPage = () => {
                   type="tel"
                   placeholder="Phone Number"
                   className="w-full text-white font-semibold border border-blue-400 p-2 rounded mt-1 focus:outline-none"
+                  maxLength={10}
                   value={player.phone}
                   onChange={(e) =>
                     handlePlayerChange(index, "phone", e.target.value)
@@ -234,7 +235,7 @@ const RegistrationPage = () => {
             ))}
           </div>
         )}
-        {/* UPI Payment Button */}
+        {/* UPI Payment Section */}
         {selectedEvent && (
           <div className="mt-4 py-4 px-6 bg-gray-800 rounded-xl text-base md:text-2xl">
             <h1 className="text-white text-center">
