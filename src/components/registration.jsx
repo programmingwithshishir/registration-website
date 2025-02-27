@@ -108,7 +108,7 @@ const RegistrationPage = () => {
           <input
             id="teamName"
             name="teamName"
-            className="w-full text-blue-400 md:text-lg focus:outline-none text-base font-semibold"
+            className="w-full rounded px-2 py-1 border border-blue-400 text-blue-400 md:text-lg focus:outline-none text-base font-semibold"
             type="text"
             placeholder="Must not be same as college"
             required
@@ -126,7 +126,7 @@ const RegistrationPage = () => {
           <input
             id="collegeName"
             name="collegeName"
-            className="w-full text-blue-400 md:text-lg focus:outline-none text-base font-semibold"
+            className="w-full rounded px-2 py-1 border border-blue-400 text-blue-400 md:text-lg focus:outline-none text-base font-semibold"
             type="text"
             placeholder="Must not be same as Team name"
             required
