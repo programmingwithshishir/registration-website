@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { db } from "../firebase";
+import { collection, addDoc } from "firebase/firestore";
 
 const RegistrationPage = () => {
   const [selectedEvent, setSelectedEvent] = useState("");
@@ -37,7 +39,7 @@ const RegistrationPage = () => {
     setPlayers(updatedPlayers);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const teamName = document.getElementById("teamName");
     const collegeName = document.getElementById("collegeName");
     const transactionId = document.getElementById("transactionId");
@@ -77,18 +79,31 @@ const RegistrationPage = () => {
         return;
       }
     }
-    const registrationData = {
-      teamName: teamName.value,
-      collegeName: collegeName.value,
-      transactionId: transactionId.value,
-      event: selectedEvent,
-      players: players,
-      paymentStatus: false,
-    };
 
-    const jsonData = JSON.stringify(registrationData, null, 2);
-    console.log(jsonData);
-    alert("Registration successful!");
+    const addDocumentWithTimeout = async (data, timeout = 30000) => {
+      return Promise.race([
+        addDoc(collection(db, "users"), data),
+        new Promise((_, reject) =>
+          setTimeout(() => reject(new Error("Request timed out")), timeout)
+        ),
+      ]);
+    };
+    try {
+      await addDocumentWithTimeout(
+        {
+          teamName: teamName.value,
+          collegeName: collegeName.value,
+          transactionId: transactionId.value,
+          event: selectedEvent,
+          createdAt: new Date(),
+          players: players,
+          paymentStatus: false,
+        },
+        30000
+      );
+    } catch (error) {
+      console.error("Error");
+    }
   };
 
   return (
@@ -108,7 +123,7 @@ const RegistrationPage = () => {
           <input
             id="teamName"
             name="teamName"
-            className="w-full text-blue-400 md:text-lg focus:outline-none text-base font-semibold"
+            className="w-full px-2 py-1 border border-blue-400 rounded text-white md:text-lg focus:outline-none text-base font-semibold"
             type="text"
             placeholder="Must not be same as college"
             required
@@ -126,7 +141,7 @@ const RegistrationPage = () => {
           <input
             id="collegeName"
             name="collegeName"
-            className="w-full text-blue-400 md:text-lg focus:outline-none text-base font-semibold"
+            className="w-full px-2 py-1 border border-blue-400 rounded text-white md:text-lg focus:outline-none text-base font-semibold"
             type="text"
             placeholder="Must not be same as Team name"
             required
