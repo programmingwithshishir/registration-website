@@ -118,8 +118,16 @@ const RegistrationPage = () => {
 
   return (
     <div className="w-full flex flex-col items-center select-none">
-      <h1 className="mt-20 mb-10 text-blue-400 text-3xl md:text-4xl font-bold font-primary">
+      <h1 className="mt-20 text-blue-400 text-3xl md:text-4xl font-bold font-primary">
         Register Now
+      </h1>
+      <h1 className="text-white font-primary mt-1 text-center leading-4">
+        <span className="font-semibold">Note: </span>Final date for online
+        registration is{" "}
+        <span className="text-blue-400 font-semibold">
+          <br />
+          10th March, 2025
+        </span>
       </h1>
       <div className="mt-5 max-w-xl w-11/12 flex flex-col items-center bg-blend-luminosity font-primary rounded-2xl overflow-hidden">
         {/* Team Name */}
