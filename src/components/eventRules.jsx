@@ -48,7 +48,8 @@ const EventRules = () => {
         <p className="text-white text-sm">
           -Number of participants: 1 <br /> -Number of rounds: 3 <br />{" "}
           -Participants are free to use any programming language of their
-          choice. <br /> -No electronic gadgets are allowed.
+          choice. <br /> -Knowledge of C programming is a must for all the
+          participants. <br /> -No electronic gadgets are allowed.
         </p>
         <h1 className="text-white">
           Event Coordinators: <br />{" "}
@@ -83,7 +84,11 @@ const EventRules = () => {
         </h1>
         <p className="text-white text-sm">
           -Number of participants: 3 <br /> -Number of rounds: 1 <br />{" "}
-          -Participants must carry their own laptops.
+          -Participants must carry their own laptops. <br /> -Participants must
+          create a PPT to showcase and explain their product. <br />{" "}
+          -Presentation must not exceed a time limit of 10 minutes. <br /> -Just
+          the conceptual idea can be presented, but working models of the
+          product will gain more points.
         </p>
         <h1 className="text-white">
           Event Coordinators: <br />{" "}
@@ -92,6 +97,11 @@ const EventRules = () => {
           <span className="text-blue-400 font-bold">Dwithi:</span>{" "}
           <span className="select-text">8861852637</span>
         </h1>
+        <h1 className="text-blue-400 text-xl font-bold">Problem Statements:</h1>
+        <p className="text-white text-sm">
+          -Community engagement and local service. <br /> -Education and skills
+          development. <br /> -Women health and security.
+        </p>
       </div>
       {/* Cine-Scope: Videography */}
       <div className="pl-8 md:pl-32 lg:pl-52 pb-10 w-full">
@@ -100,7 +110,7 @@ const EventRules = () => {
         </h1>
         <p className="text-white text-sm">
           -Number of participants: 1 <br /> -Number of rounds: 3 <br />{" "}
-          -Participants must carry their own equipments. <br /> No stock or
+          -Participants must carry their own equipments. <br /> -No stock or
           precaptured videos should be used.
         </p>
         <h1 className="text-white">
