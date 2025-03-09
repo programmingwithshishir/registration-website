@@ -24,7 +24,7 @@ const RegistrationPage = () => {
     "it-manager": 200,
     "product-launch": 600,
     videography: 200,
-    "cultural-dance": 1500,
+    "cultural-dance": 1000,
   };
 
   const handleEventChange = (event) => {
