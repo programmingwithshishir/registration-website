@@ -12,7 +12,10 @@ const ViewRegistered = () => {
         const q = query(collection(db, "registered"), where("paymentStatus", "==", true));
         const querySnapshot = await getDocs(q);
         const dataList = querySnapshot.docs.map((doc) => doc.data());
-        setRegistrations(dataList);
+        
+        // Sort registrations by event name
+        const sortedData = dataList.sort((a, b) => a.event.localeCompare(b.event));
+        setRegistrations(sortedData);
       } catch (error) {
         alert("Error fetching data: ", error);
       }
@@ -23,7 +26,7 @@ const ViewRegistered = () => {
   return (
     <div className="w-full p-5 md:p-15 flex justify-center items-center">
         <div className="p-4 max-w-2xl bg-white shadow-lg rounded-lg">
-        <h2 className="text-xl font-bold mb-4">Paid Registrations</h2>
+        <h2 className="text-xl font-bold mb-4">Approved Registrations</h2>
         {registrations.length > 0 ? (
             <ul className="space-y-4">
             {registrations.map((registration, index) => (
