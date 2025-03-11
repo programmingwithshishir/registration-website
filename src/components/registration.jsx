@@ -18,12 +18,12 @@ const RegistrationPage = () => {
   };
 
   const eventAmounts = {
-    "it-quiz": 400,
-    "web-designing": 400,
-    coding: 200,
-    "it-manager": 200,
-    "product-launch": 600,
-    videography: 200,
+    "it-quiz": 200,
+    "web-designing": 200,
+    coding: 100,
+    "it-manager": 100,
+    "product-launch": 300,
+    videography: 100,
     "cultural-dance": 1000,
   };
 
