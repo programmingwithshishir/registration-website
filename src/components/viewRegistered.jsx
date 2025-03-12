@@ -13,8 +13,8 @@ const ViewRegistered = () => {
         const querySnapshot = await getDocs(q);
         const dataList = querySnapshot.docs.map((doc) => doc.data());
         
-        // Sort registrations by event name
-        const sortedData = dataList.sort((a, b) => a.event.localeCompare(b.event));
+        // Sort registrations by college name
+        const sortedData = dataList.sort((a, b) => a.collegeName.localeCompare(b.collegeName));
         setRegistrations(sortedData);
       } catch (error) {
         alert("Error fetching data: ", error);
